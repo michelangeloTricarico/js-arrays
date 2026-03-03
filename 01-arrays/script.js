@@ -14,14 +14,20 @@ const fourthTeacher = teachers[3]; //for 4th theacher in the list index == 3 bec
 console.log(fourthTeacher); // to print variable
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
-teachers[4] = "Patrick" // Carlo is the 5th teacher in the list previously, new value is Patrick
-console.log(teachers) // To check that Carlo is out of list and Patrick is in 5th position
+teachers[4] = "Patrick"; // Carlo is the 5th teacher in the list previously, new value is Patrick
+console.log(teachers); // To check that Carlo is out of list and Patrick is in 5th position
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher = null;
+const lastTeacher = teachers[teachers.length-1]; // to take last place in the list
+console.log(lastTeacher); // to print last value in the list
+teachers.pop(); // to remove last element in the list
+console.log(teachers); // print list without last element 
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = null;
+const firstTeacher = teachers[0]; // to save first element in a variable
+console.log(firstTeacher); // to print first element
+teachers.shift(); // to remove first element in the list
+console.log(teachers); // print list without first element 
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
