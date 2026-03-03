@@ -28,6 +28,14 @@ for (let i=0; i<teachers.length; i++){ // use for cyle to check elements in list
 console.log(longNames); // print result
 
 // 3. Rimuovi 'Ed' dall'array teachers
+const Ed_index = teachers.indexOf("Ed"); //use indexOf to find index to remove
+for (let i=0; i<teachers.length; i++){ // use for cycle to check elements in list
+  if (i>Ed_index){ // when i is higher than index to remove, shift other element
+    teachers[i-1]=teachers[i] 
+  }
+}
+teachers.pop() //remove last element
+console.log(teachers)
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
