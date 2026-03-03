@@ -30,8 +30,12 @@ teachers.shift(); // to remove first element in the list
 console.log(teachers); // print list without first element 
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
+teachers.push("Vanessa"); // to add a teacher at the end of list
+console.log(teachers); // print list to check
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+teachers.unshift("Sarah"); // to add a teacher at the start of list
+console.log(teachers); // print list to check
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
