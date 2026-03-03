@@ -50,6 +50,14 @@ else{ // if index is -1 Fabio isn't in the list
 }
 
 
-
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+let teachersString = "";
+for (let i=0; i<teachers.length; i++){ // use for cycle to merge all the values in the list in a string
+  if (i == 0){ // only if is first value not add a ,
+    teachersString = teachers[i]
+  }
+  else{
+    teachersString =teachersString+","+teachers[i] // for other values add previsously value and ,
+  }
+}
+console.log(teachersString) // print result
