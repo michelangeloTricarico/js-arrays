@@ -10,12 +10,10 @@ const teachers = [
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = teachers;
-let j=0 // index to use in reversed list 0 to original list length
-for (let i=teachers.length-1; i>=0; i--){  // use origila length to cycle from length number to 0
-  reversedTeachers[j] = teachers[i]; // to reverse list i value must be saved in j value
+const reversedTeachers = [];
+for (let i=0; i<teachers.length; i++){  // use origil length to cycle from 0 to list length
+  reversedTeachers.unshift(teachers[i]); // to reverse list use unshift
   //console.log(reversedTeachers[j])
-  j++ // increase j value
 }
 console.log(reversedTeachers); // print reversed list
 
